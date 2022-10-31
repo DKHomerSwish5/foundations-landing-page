@@ -1,0 +1,205 @@
+body{
+    display: flex; /*sets up the flex box for the 6 main containers within the project*/
+    flex-direction: column; /*changes direction instead of a row, the flex box containers will be in a column*/
+    margin: 0;  /*utilize spacing around whole page*/
+    font-family: Arial, Helvetica, sans-serif;  /*makes website font similar to sample image*/
+}
+.header-container{
+    display: flex; /*makes header-container into flex row direction*/
+    background-color: #1F2937; /*background color*/
+    align-items: center; /*center vertically*/
+    justify-content: space-between; /*spacing around for header logo and the links and pushes the content to the ends which makes it easier to align content throughout the page before adjusting end spacing via padding*/
+    padding-left: 200px;        /*padding provides the spacing around the text as seen in the example*/
+    padding-right: 200px;
+    padding-top: 20px;
+}
+.header-logo{
+    color: #F9FAF8; /*header logo font color*/
+    font-size: 24px;    /*header logo font size*/
+    /*Going to need to vertically align logo*/
+    
+}
+.hero-container{
+    background-color: #1F2937;  /*hero container background color #1F2937*/
+    /*border: 1px solid black;*/
+    display: flex;  /*makes hero container into flex row direction*/
+    align-items: center; /*center vertically*/
+    justify-content: space-between; /*pushes the content to the ends which makes it easier to align content throughout the page before adjusting end spacing via padding*/
+    padding-left: 200px; /*padding provides the spacing around the text as seen in the example*/
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+
+}
+
+.option-container{
+    
+    height: 500px;
+}
+.image-container{       /*boxes container*/
+    display: flex;      /*puts flex items in a row*/
+    gap: 40px;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.quote-container{
+    color: #1F2937;
+    
+    background-color: #E5E7EB; /*quote container background color*/
+    height: 400px;  
+    
+}
+.quote-text{
+    
+    font-size: 36px;
+    font-style: italic;
+    display: flex;
+    /*provides left and right spacing*/
+    padding-top: 115px;
+    padding-left: 335px;
+    padding-right: 335px;
+}
+.quote-author{
+    display: flex;
+    justify-content: flex-end;
+    
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 335px;
+
+}
+.sign-up-item{
+    background-color: #3882F6;
+    border-radius: 10px;    /*button radius*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1000px;
+    height: 100px;
+}
+.sign-up-container{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-text-box{
+    
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+}
+.sign-up-bold{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sign-up-text{
+    font-size: 20px;
+}
+.sign-up-text-button{
+    background-color: #3882F6;  /*button color*/
+    border-radius: 10px;    /*button radius*/
+    padding: 0px 35px;      /*horizontal padding size*/
+    line-height: 2.5;       /*vertical size of button*/
+    font-size: 1rem;        /*font size of sign up*/
+    text-align: center;     /*centers text*/
+    color: white;       /*button text color*/
+    border: 3px solid white;           /*removes button default border*/
+}
+.footer-container{
+    background-color: #1F2937; /*foot container background color*/
+    height: 100px;
+    display: flex;
+    color:#F9FAF8;
+    justify-content: center;
+    align-items: center;
+}
+/*For box under "some random information" container, use the .box class in css from flex 1 lesson */
+a{
+    text-decoration: none;  /*removes link underline*/
+    font-size: 18px;    /*link font size*/
+    color: #E5E7EB; /*link font color*/
+}
+ul{
+    list-style-type: none;/*removes bullet*/
+    padding: 0;/*removes spacing*/
+    margin: 0;/*removes spacing*/
+    gap: 15px; /*provides spacing between links*/
+    
+}
+.Welcome-Text{
+    font-size: 48px; /*Hero Main Text Font Size*/
+    font-weight: 800; /*Font Weight of Hero Main Text*/
+    color:#F9FAF8 /*Hero Main Text Color*/
+}
+.hero-text-info{
+
+    width: 450px;       /*provides width for hero text info flex box*/
+    height: 225px;      /*provides height for hero text info flex box*/
+    color: #E5E7EB;     /*text font color*/
+    font-size: 18px;        /*text size*/
+    padding-right: 50px;
+    flex-shrink: 0;
+
+}
+.info-text{
+    padding-bottom: 10px;       /*provides padding space under the info text/above the sign up button*/
+}
+.Project-Logo{                  /*Place Holder Box*/
+    /*flex: 2;*/
+    display: flex;              /*display flex and centering for the next two lines is for the text*/
+    justify-content: center;
+    align-items: center;
+    background: grey;           /*grey box background*/
+    color: white;               /*text color*/
+    width:535px;                   /*creating width of box*/
+    height: 225px;                  /*creating height of box*/
+    flex-shrink: 0;
+}
+
+/*SIGN UP BUTTON for hero text*/
+.sign-up{
+    background-color: #3882F6;  /*button color*/
+    border-radius: 10px;    /*button radius*/
+    padding: 0px 35px;      /*horizontal padding size*/
+    line-height: 2.5;       /*vertical size of button*/
+    font-size: 1rem;        /*font size of sign up*/
+    text-align: center;     /*centers text*/
+    color: white;       /*button text color*/
+    border: none;           /*removes button default border*/
+}
+.links{
+    display: flex;/*makes links in flex row direction*/   
+}
+.bold-text{     /*information header text*/
+    font-size: 36px;    /*font size*/
+    font-weight:800;
+    color: #1F2937;
+    text-align:center;
+    /*border: 6px solid black;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.info-box{          /*box properties*/
+    
+    border: 5px solid #3882F6; /*border template of box*/
+    border-radius: 20px;
+    width: 150px;    /*width of box*/
+    height: 150px;    /*height of box*/
+    
+}
+.image-item{
+    /*border: 10px solid black;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    height: auto;
+    row-gap: 10px;
+    /*justify-content: center;*/
+}
+
+
